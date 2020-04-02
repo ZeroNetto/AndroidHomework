@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_margin="15dp"
+    android:id="@+id/habit_editor_container">
+
+    <EditText
+        android:hint="@string/editor_habit_name"
+        android:id="@+id/editor_habit_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.EditText"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/editor_habit_description"
+        android:hint="@string/editor_habit_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.EditText"
+        android:inputType="textMultiLine"/>
+
+    <Spinner
+        android:id="@+id/editor_habit_priority"
+        android:hint="@string/editor_habit_priority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.EditText"
+        android:inputType="text"/>
+
+    <!-- <RadioGroup
+        android:id="@+id/editor_radioGroup_habit_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/editor_radio_good_habit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/editor_good_habit_type"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/editor_radio_bad_habit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/editor_bad_habit_type"/>
+    </RadioGroup>-->
+
+    <EditText
+        android:id="@+id/editor_habit_done_count"
+        android:hint="@string/editor_habit_done_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.EditText"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/editor_habit_periodicity"
+        android:hint="@string/editor_habit_periodicity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.EditText"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/editor_habit_color"
+        android:hint="@string/editor_habit_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_gravity="center"
+        android:inputType="text"/>
+
+    <Button
+        android:id="@+id/button_save_habit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_save_habit"
+        android:textSize="16sp"
+        android:layout_gravity="center"/>
+</LinearLayout>
