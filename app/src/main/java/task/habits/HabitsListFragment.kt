@@ -51,12 +51,6 @@ class HabitsListFragment : Fragment(), IOnRecyclerViewElementClickListener {
         habitType = arguments?.getInt("habitType", 0) ?: 0
         habitsList = arguments?.getSerializable("habitsList") as ArrayList<HabitInfo>
 
-        if (context is IHabitsListListener){
-            val listener = context as IHabitsListListener
-            val floatingButton = view.findViewById<FloatingActionButton>(R.id.floatingButton_add_habit)
-            floatingButton?.setOnClickListener { listener.updateHabit(habitInfo = null) }
-        }
-
         setAdapterForHabitType()
     }
 

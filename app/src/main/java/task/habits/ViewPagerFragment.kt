@@ -29,7 +29,7 @@ class ViewPagerFragment : Fragment() {
         activity?.let { activity ->
             if (activity is AppCompatActivity)
                 viewPager.adapter = HabitTypePagerAdapter2(activity)
-            TabLayoutMediator(tabLayout, viewPager) { tab, position ->
+            TabLayoutMediator(tabLayout, viewPager ) { tab, position ->
                 tab.text = when (position) {
                     1 -> "Плохие"
                     else -> "Хорошие"

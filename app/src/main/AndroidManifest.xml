@@ -12,11 +12,6 @@
         <activity
             android:name=".NavigationActivity"
             android:label="@string/title_activity_navigation"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".HabitEditorActivity" />
-        <activity
-            android:name="task.habbits.example"
-            android:label="@string/title_activity_example"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".HabitEditorFragment" />
         <activity android:name=".HabitsListActivity">

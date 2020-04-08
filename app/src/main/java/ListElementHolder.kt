@@ -15,7 +15,6 @@ class ListElementHolder(
     var habitPriority = itemView.findViewById<TextView>(R.id.listElement_habit_priority_value)
     var habitPeriodicity = itemView.findViewById<TextView>(R.id.listElement_habit_periodicity_value)
     var habitDoneCount = itemView.findViewById<TextView>(R.id.listElement_habit_done_count_value)
-    var habitColor = itemView.findViewById<TextView>(R.id.listElement_habit_color_value)
 
     init{
         containerView.setOnClickListener(this)
@@ -28,7 +27,6 @@ class ListElementHolder(
         habitPriority.text = habitInfo.HabitPriorityValue.toString()
         habitPeriodicity.text = habitInfo.HabitPeriodicity.toString()
         habitDoneCount.text = habitInfo.HabitDoneCount.toString()
-        habitColor.text = habitInfo.HabitColor
     }
 
     override fun onClick(view: View?) {
