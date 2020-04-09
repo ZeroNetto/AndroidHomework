@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.activity_main.*
@@ -54,6 +55,7 @@ class HabitsListActivity : AppCompatActivity(),
             .commit()
 
         floatingButton_add_habit.visibility = View.GONE
+        navigationDrawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED)
     }
 
     override fun saveHabit(position: Int, actionType: Int, habitInfo: HabitInfo?) {
@@ -82,6 +84,7 @@ class HabitsListActivity : AppCompatActivity(),
         }
 
         floatingButton_add_habit.visibility = View.VISIBLE
+        navigationDrawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED)
 
         supportFragmentManager
             .beginTransaction()
