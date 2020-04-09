@@ -39,4 +39,7 @@
 
     <string name="menu_main_page">Главная</string>
     <string name="menu_info_page">Информация</string>
+    <string name="app_info">Информация о приложении</string>
+    <string name="developer">Разработчик: ZeroNetto</string>
+    <string name="version">Версия приложения: 4.0</string>
 </resources>
